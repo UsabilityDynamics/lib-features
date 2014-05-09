@@ -14,7 +14,7 @@
     ],
   "autoload": {
     "classmap": [ "lib" ],
-    "files": []
+    "files":    [ "lib/api/autoload.php" ]
   },
   "homepage": "http://github.com/usabilitydynamics/lib-features",
   "authors": [
