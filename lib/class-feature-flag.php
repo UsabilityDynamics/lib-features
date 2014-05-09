@@ -54,18 +54,26 @@ namespace UsabilityDynamics\Feature {
       /**
        * Get Feature Flag
        *
+       * @example
+       *
+       *    // Returns true if all needed flags are set.
+       *    UsabilityDynamics\Feature\Flag::get( 'development', 'ten' )
+       *    UsabilityDynamics\Feature\Flag::get( 'development' )
+       *
        * @param $flag
-       * @param $type
+       *
+       * @internal param $type
        *
        * @return bool
        */
-      static public function get( $flag, $type = false ) {
+      static public function get( $flag  ) {
 
         if( !self::$_initialized ) {
           self::setup();
         }
 
-        return in_array( $type ? $type . '::' . $flag : $flag, self::$_flags );
+        return count( array_intersect( func_get_args(), self::$_flags ) ) === count( func_get_args() );
+
       }
 
     }
