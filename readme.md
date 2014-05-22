@@ -10,6 +10,7 @@
 
 ## Usage
 
+```php
     use UsabilityDynamics\Feature;
 
     Feature\Flag::set( array( 'one,two,three' ) );
@@ -19,3 +20,4 @@
     if( user_has_feature_flag( 'name' ) ) {
       die( 'user has name' );
     }
+```
