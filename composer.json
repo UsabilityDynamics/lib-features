@@ -16,7 +16,7 @@
     "classmap": [ "lib" ],
     "files":    [ "lib/api/autoload.php" ]
   },
-  "homepage": "http://github.com/usabilitydynamics/lib-features",
+  "homepage": "https://github.com/udx/lib-features",
   "authors": [
     {
       "name": "Andy Potanin",
